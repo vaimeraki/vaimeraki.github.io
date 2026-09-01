@@ -67,7 +67,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .wrap {
-  max-width: 74rem;
+  max-width: 82rem;
   margin: 0 auto;
   padding: 0 var(--space-3);
 }
@@ -147,7 +147,7 @@ a:focus-visible, button:focus-visible {
   background: radial-gradient(140% 160% at 15% 0%, var(--navy-700) 0%, var(--navy-900) 55%);
   background-size: 160% 160%;
   color: var(--paper);
-  padding: var(--space-6) 0 var(--space-6);
+  padding: var(--space-6) 0 var(--space-5);
   animation: heroDrift 22s ease-in-out infinite alternate;
 }
 @keyframes heroDrift {
@@ -211,14 +211,14 @@ a:focus-visible, button:focus-visible {
 .btn-outline:hover { border-color: var(--ink); box-shadow: 0 8px 18px rgba(20, 23, 42, 0.1); }
 
 /* ---------- Section rhythm ---------- */
-.about, .work, .projects, .skills { padding: var(--space-6) 0; }
+.about, .work, .projects, .skills { padding: var(--space-5) 0; }
 .work, .skills { padding-top: 0; }
 .skills { background: var(--paper-raised); }
 .section-title {
   font-size: 1.5rem; font-weight: 500;
   margin-bottom: var(--space-3);
 }
-.section-title-spaced { margin-top: var(--space-5); }
+.section-title-spaced { margin-top: var(--space-4); }
 
 /* ---------- Skills ---------- */
 .skills-grid {
