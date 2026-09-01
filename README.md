@@ -5,11 +5,12 @@ A single-page portfolio site, rebuilt from the original Google Sites portfolio
 
 ## What's here
 
-- `index.html` — all content: home, about, experience, education, featured
-  project, more work, other work, and contact
+- `index.html` — all content: home, about, experience, education, skills,
+  featured project, more work, other work, and contact
 - `styles.css` — site styling
 - `script.js` — mobile nav toggle + active-section highlighting
 - `images/` — all site images, self-hosted (no more hotlinking to Google's CDN)
+- `Vaishnavi_Jagtap_CV_Data_Engineer.pdf` — the CV linked from the About section
 
 ## About the invitation card image
 
@@ -27,8 +28,9 @@ the whole card out entirely, just remove that `<figure>` block from the
    this way gives you a live site at `https://vaimeraki.github.io`
    automatically). Leave it public, and don't initialize it with a README.
 2. On the new repo's page, click **"uploading an existing file"**.
-3. Drag in `index.html`, `styles.css`, `script.js`, and the whole `images`
-   folder from this project, then click **Commit changes**.
+3. Drag in `index.html`, `styles.css`, `script.js`,
+   `Vaishnavi_Jagtap_CV_Data_Engineer.pdf`, and the whole `images` folder
+   from this project, then click **Commit changes**.
 4. Go to **Settings → Pages** in the repo. Under "Build and deployment",
    set Source to **Deploy from a branch**, branch **main**, folder **/(root)**,
    then **Save**.
