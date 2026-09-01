@@ -1,17 +1,17 @@
 /* ---------- Tokens ---------- */
 :root {
-  --navy-900: #10152B;
-  --navy-800: #1B2242;
-  --navy-700: #2A3358;
-  --paper: #EEF0EC;
-  --paper-raised: #E4E7DF;
-  --ink: #14172A;
-  --ink-soft: #4A4E63;
-  --beige: #D9C4A0;
-  --beige-dark: #B08D55;
-  --teal: #4C9A93;
-  --line: rgba(20, 23, 42, 0.14);
-  --line-on-dark: rgba(238, 240, 236, 0.18);
+  --navy-900: #0A1C4A;
+  --navy-800: #123166;
+  --navy-700: #1C5F9E;
+  --paper: #EEF1F3;
+  --paper-raised: #E2E6EA;
+  --ink: #12203E;
+  --ink-soft: #4A5568;
+  --beige: #00AEEF;
+  --beige-dark: #1C75BC;
+  --teal: #1C75BC;
+  --line: rgba(18, 32, 62, 0.14);
+  --line-on-dark: rgba(238, 241, 243, 0.18);
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -76,7 +76,7 @@ a:focus-visible, button:focus-visible {
 .scroll-progress {
   position: fixed; top: 0; left: 0;
   height: 3px; width: 0%;
-  background: linear-gradient(90deg, var(--beige-dark), var(--teal));
+  background: linear-gradient(90deg, var(--beige), var(--beige-dark));
   z-index: 60;
   transition: width 0.12s ease-out;
 }
@@ -93,8 +93,13 @@ a:focus-visible, button:focus-visible {
   height: 4.25rem;
 }
 .mark {
-  font-family: var(--font-display); font-weight: 600; font-size: 1.25rem;
-  text-decoration: none; color: var(--ink); letter-spacing: 0.02em;
+  display: inline-flex; align-items: center;
+  text-decoration: none;
+}
+.mark img {
+  width: 2.5rem; height: 2.5rem;
+  border-radius: 6px;
+  display: block;
 }
 .site-nav ul {
   display: flex; gap: var(--space-4); align-items: center;
@@ -200,7 +205,7 @@ a:focus-visible, button:focus-visible {
 .btn-primary {
   background: var(--beige); color: var(--navy-900);
 }
-.btn-primary:hover { background: var(--beige-dark); box-shadow: 0 8px 18px rgba(176, 141, 85, 0.35); }
+.btn-primary:hover { background: var(--beige-dark); box-shadow: 0 8px 18px rgba(28, 117, 188, 0.35); }
 .btn-ghost {
   border-color: var(--line-on-dark); color: var(--paper);
 }
@@ -208,7 +213,7 @@ a:focus-visible, button:focus-visible {
 .btn-outline {
   border-color: var(--line); color: var(--ink);
 }
-.btn-outline:hover { border-color: var(--ink); box-shadow: 0 8px 18px rgba(20, 23, 42, 0.1); }
+.btn-outline:hover { border-color: var(--ink); box-shadow: 0 8px 18px rgba(18, 32, 62, 0.1); }
 
 /* ---------- Section rhythm ---------- */
 .about, .work, .projects, .skills { padding: var(--space-5) 0; }
@@ -410,7 +415,7 @@ a:focus-visible, button:focus-visible {
 }
 .project-gallery img:hover {
   transform: scale(1.02);
-  box-shadow: 0 10px 24px rgba(16, 21, 43, 0.14);
+  box-shadow: 0 10px 24px rgba(18, 32, 62, 0.14);
 }
 .project-gallery img:first-child, .project-gallery img:nth-child(2) {
   grid-column: span 2;
@@ -496,7 +501,7 @@ a:focus-visible, button:focus-visible {
 }
 .canva-gallery img:hover {
   transform: scale(1.02);
-  box-shadow: 0 10px 24px rgba(16, 21, 43, 0.14);
+  box-shadow: 0 10px 24px rgba(18, 32, 62, 0.14);
 }
 .canva-gallery figcaption {
   font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.5em;
