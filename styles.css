@@ -297,7 +297,7 @@ a:focus-visible, button:focus-visible {
 
 @media (max-width: 720px) {
   .about-grid { grid-template-columns: 1fr; }
-  .about-portrait { max-width: 12rem; }
+  .about-portrait { max-width: 14rem; margin: 0 auto var(--space-3); }
 }
 
 /* ---------- Timeline ---------- */
