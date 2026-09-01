@@ -1,6 +1,20 @@
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Scroll progress bar
+const progressBar = document.getElementById('scroll-progress');
+if (progressBar) {
+  const updateProgress = () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+}
+
 // Mobile nav toggle
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
