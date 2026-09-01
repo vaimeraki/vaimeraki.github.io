@@ -18,7 +18,7 @@ if (toggle && nav) {
 }
 
 // Active nav highlighting on scroll
-const sections = ['about', 'work', 'projects', 'contact']
+const sections = ['about', 'work', 'skills', 'projects', 'interests', 'contact']
   .map(id => document.getElementById(id))
   .filter(Boolean);
 const navLinks = document.querySelectorAll('[data-nav]');
