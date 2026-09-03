@@ -444,7 +444,7 @@ a:focus-visible, button:focus-visible {
   border-radius: 999px; padding: 0.15em 0.6em;
   margin-left: 0.5em; vertical-align: middle;
 }
-.worklist-item p { grid-column: 1; color: var(--ink-soft); margin-bottom: 0; max-width: 46ch; }
+.worklist-item p { grid-column: 1; color: var(--ink-soft); margin-bottom: 0; max-width: var(--measure); }
 .worklist-links {
   grid-column: 2; grid-row: 1 / span 2; align-self: center;
   display: flex; flex-direction: column; gap: 0.4em; align-items: flex-end;
