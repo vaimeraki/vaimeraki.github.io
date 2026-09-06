@@ -499,6 +499,29 @@ a:focus-visible, button:focus-visible {
   border-radius: 4px; border: 1px solid var(--line);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.canva-text-card {
+  aspect-ratio: 4 / 5;
+  background: var(--navy-900);
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--space-3);
+  text-align: center;
+}
+.canva-text-card-inner p {
+  font-family: var(--font-display);
+  color: var(--paper);
+  font-size: 1.15rem;
+  margin-bottom: 0.75em;
+}
+.canva-text-card-inner a {
+  color: var(--beige);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-on-dark);
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease;
+}
+.canva-text-card-inner a:hover { border-bottom-color: var(--beige); }
 .canva-gallery img:hover {
   transform: scale(1.02);
   box-shadow: 0 10px 24px rgba(18, 32, 62, 0.14);
