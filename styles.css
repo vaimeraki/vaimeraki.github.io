@@ -401,7 +401,7 @@ a:focus-visible, button:focus-visible {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-2);
   margin: var(--space-3) 0;
   align-items: start;
@@ -417,12 +417,8 @@ a:focus-visible, button:focus-visible {
   transform: scale(1.02);
   box-shadow: 0 10px 24px rgba(18, 32, 62, 0.14);
 }
-.project-gallery img:first-child, .project-gallery img:nth-child(2) {
-  grid-column: span 2;
-}
-@media (max-width: 720px) {
-  .project-gallery { grid-template-columns: 1fr 1fr; }
-  .project-gallery img:first-child, .project-gallery img:nth-child(2) { grid-column: span 1; }
+@media (max-width: 560px) {
+  .project-gallery { grid-template-columns: 1fr; }
 }
 
 /* ---------- Worklist ---------- */
